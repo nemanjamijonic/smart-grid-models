@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+
+
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+<h1>Profile Documentation</h1>
+<p/>
+<p class="declaration">
+					Profile namespace:
+					<span class="namespace">http://iec.ch/TC57/2007/profile#</span>
+</p>
+<h1>Concrete Classes</h1>
+<div id="AssetContainer" class="group">
+<a href="#AssetContainer">
+<h2 class="concrete">AssetContainer</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Asset that is aggregation of other assets such as conductors, transformers, switchgear, land, fences, buildings, equipment, vehicles, etc.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">critical</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.critical">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">initialCondition</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.initialCondition">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">lotNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.lotNumber">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">serialNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.serialNumber">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">type</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.type">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">utcNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.utcNumber">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">AssetInfo</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetInfo">AssetInfo</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.AssetInfo">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">initialLossOfLife</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.initialLossOfLife">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">OrganisationRoles</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetOrganisationRole">AssetOrganisationRole</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.OrganisationRoles">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">purchasePrice</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Money">Money</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.purchasePrice">Asset</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="AssetInfo" class="group">
+<a href="#AssetInfo">
+<h2 class="concrete">AssetInfo</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Set of attributes of an asset, representing typical data-sheet information of a physical device that can be instantiated and shared in different data exchange contexts:</p>
+<p class="comment">- as attributes of an asset instance (installed or in stock)</p>
+<p class="comment">- as attributes of an asset model (product by a manufacturer)</p>
+<p class="comment">- as attributes of a type asset (generic type of an asset as used in designs/extension planning).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="AssetInfo.AssetModel">AssetModel</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetModel">AssetModel</a>
+</p>
+</td>
+<td>
+<p class="comment">Asset model described by this data.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="AssetOwner" class="group">
+<a href="#AssetOwner">
+<h2 class="concrete">AssetOwner</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Owner of the asset.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ComMedia" class="group">
+<a href="#ComMedia">
+<h2 class="concrete">ComMedia</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Communication media such as fibre optic cable, power-line, telephone, etc.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">critical</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.critical">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">initialCondition</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.initialCondition">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">lotNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.lotNumber">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">serialNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.serialNumber">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">type</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.type">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">utcNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.utcNumber">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">AssetInfo</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetInfo">AssetInfo</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.AssetInfo">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">initialLossOfLife</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.initialLossOfLife">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">OrganisationRoles</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetOrganisationRole">AssetOrganisationRole</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.OrganisationRoles">Asset</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">purchasePrice</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Money">Money</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Asset.purchasePrice">Asset</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ProductAssetModel" class="group">
+<a href="#ProductAssetModel">
+<h2 class="concrete">ProductAssetModel</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Asset model by a specific manufacturer.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ProductAssetModel.corporateStandardKind">corporateStandardKind</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#CorporateStandardKind">CorporateStandardKind</a>
+</p>
+</td>
+<td>
+<p class="comment">Kind of corporate standard for this asset model.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ProductAssetModel.modelNumber">modelNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Manufacturer's model number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ProductAssetModel.modelVersion">modelVersion</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Version number for product model, which indicates vintage of the product.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ProductAssetModel.usageKind">usageKind</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetModelUsageKind">AssetModelUsageKind</a>
+</p>
+</td>
+<td>
+<p class="comment">Intended usage for this asset model.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ProductAssetModel.weightTotal">weightTotal</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Weight">Weight</a>
+</p>
+</td>
+<td>
+<p class="comment">Total manufactured weight of asset.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">AssetInfo</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetInfo">AssetInfo</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#AssetModel.AssetInfo">AssetModel</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Seal" class="group">
+<a href="#Seal">
+<h2 class="concrete">Seal</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Physically controls access to AssetContainers.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Seal.appliedDateTime">appliedDateTime</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">dateTime</p>
+</td>
+<td>
+<p class="comment">Date and time this seal has been applied.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Seal.condition">condition</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SealConditionKind">SealConditionKind</a>
+</p>
+</td>
+<td>
+<p class="comment">Condition of seal.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Seal.kind">kind</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SealKind">SealKind</a>
+</p>
+</td>
+<td>
+<p class="comment">Kind of seal.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Seal.sealNumber">sealNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">(reserved word) Seal number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Seal.AssetContainer">AssetContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetContainer">AssetContainer</a>
+</p>
+</td>
+<td>
+<p class="comment">Asset container to which this seal is applied.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="Asset" class="group">
+<a href="#Asset">
+<h2 class="abstract">Asset</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Tangible resource of the utility, including power system equipment, various end devices, cabinets, buildings, etc. For electrical network equipment, the role of the asset is defined through PowerSystemResource and its subclasses, defined mainly in the Wires model (refer to IEC61970-301 and model package IEC61970::Wires). Asset description places emphasis on the physical characteristics of the equipment fulfilling that role.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Asset.critical">critical</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">True if asset is considered critical for some reason (for example, a pole with critical attachments).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.initialCondition">initialCondition</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Condition of asset in inventory or at time of installation. Examples include new, rebuilt, overhaul required, other. Refer to inspection data for information on the most current condition of the asset.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.lotNumber">lotNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Lot number for this asset. Even for the same model and version number, many assets are manufactured in lots.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.serialNumber">serialNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Serial number of this asset.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.type">type</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Utility-specific classification of Asset and its subtypes, according to their corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.utcNumber">utcNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Uniquely tracked commodity (UTC) number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.AssetInfo">AssetInfo</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetInfo">AssetInfo</a>
+</p>
+</td>
+<td>
+<p class="comment">Data applicable to this asset.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.initialLossOfLife">initialLossOfLife</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p class="comment">Whenever an asset is reconditioned, percentage of expected life for the asset when it was new; zero for new devices.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.OrganisationRoles">OrganisationRoles</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetOrganisationRole">AssetOrganisationRole</a>
+</p>
+</td>
+<td>
+<p class="comment">All roles an organisation plays for this asset.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Asset.purchasePrice">purchasePrice</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Money">Money</a>
+</p>
+</td>
+<td>
+<p class="comment">Purchase price of asset.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="AssetModel" class="group">
+<a href="#AssetModel">
+<h2 class="abstract">AssetModel</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Model of an asset, either a product of a specific manufacturer or a generic asset model or material item. Data-sheet characteristics are available through the associated AssetInfo subclass and can be shared with asset or power system resource instances.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="AssetModel.AssetInfo">AssetInfo</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AssetInfo">AssetInfo</a>
+</p>
+</td>
+<td>
+<p class="comment">Data applicable to this asset model.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="AssetOrganisationRole" class="group">
+<a href="#AssetOrganisationRole">
+<h2 class="abstract">AssetOrganisationRole</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Role an organisation plays with respect to asset.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.mRID">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context.</p>
+<p class="comment">Global uniqeness is easily achived by using a UUID for the mRID. It is strongly recommended to do this.</p>
+<p class="comment">For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.aliasName">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.</p>
+<p class="comment">The attribute aliasName is retained because of backwards compatibility between CIM relases. It is however recommended to replace aliasName with the Name class as aliasName is planned for retirement at a future time.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="OrganisationRole" class="group">
+<a href="#OrganisationRole">
+<h2 class="abstract">OrganisationRole</h2>
+</a>
+<p class="package">Common</p>
+<p class="comment">Identifies a way in which an organisation may participate in the utility enterprise (e.g., customer, manufacturer, etc).</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<div id="AssetModelUsageKind" class="group">
+<a href="#AssetModelUsageKind">
+<h2 class="enumerated">AssetModelUsageKind</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Usage for an asset model.</p>
+<table>
+<tr>
+<th>
+<p class="name">customerSubstation</p>
+</th>
+<td>
+<p class="comment">Asset model is intended for use in customer substation.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">distributionOverhead</p>
+</th>
+<td>
+<p class="comment">Asset model is intended for use in distribution overhead network.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">distributionUnderground</p>
+</th>
+<td>
+<p class="comment">Asset model is intended for use in underground distribution network.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">other</p>
+</th>
+<td>
+<p class="comment">Other kind of asset model usage.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">streetlight</p>
+</th>
+<td>
+<p class="comment">Asset model is intended for use as streetlight.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">substation</p>
+</th>
+<td>
+<p class="comment">Asset model is intended for use in substation.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">transmission</p>
+</th>
+<td>
+<p class="comment">Asset model is intended for use in transmission network.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">unknown</p>
+</th>
+<td>
+<p class="comment">Usage of the asset model is unknown.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="CorporateStandardKind" class="group">
+<a href="#CorporateStandardKind">
+<h2 class="enumerated">CorporateStandardKind</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Kind of corporate standard.</p>
+<table>
+<tr>
+<th>
+<p class="name">experimental</p>
+</th>
+<td>
+<p class="comment">Asset model is used experimentally.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">other</p>
+</th>
+<td>
+<p class="comment">Other kind of corporate standard for the asset model.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">standard</p>
+</th>
+<td>
+<p class="comment">Asset model is used as corporate standard.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">underEvaluation</p>
+</th>
+<td>
+<p class="comment">Asset model usage is under evaluation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SealConditionKind" class="group">
+<a href="#SealConditionKind">
+<h2 class="enumerated">SealConditionKind</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Kind of seal condition.</p>
+<table>
+<tr>
+<th>
+<p class="name">broken</p>
+</th>
+<td>
+<p class="comment">Seal is broken.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">locked</p>
+</th>
+<td>
+<p class="comment">Seal is locked.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">missing</p>
+</th>
+<td>
+<p class="comment">Seal is missing.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">open</p>
+</th>
+<td>
+<p class="comment">Seal is open.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">other</p>
+</th>
+<td>
+<p class="comment">Other kind of seal condition.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SealKind" class="group">
+<a href="#SealKind">
+<h2 class="enumerated">SealKind</h2>
+</a>
+<p class="package">Assets</p>
+<p class="comment">Kind of seal.</p>
+<table>
+<tr>
+<th>
+<p class="name">lead</p>
+</th>
+<td>
+<p class="comment">Lead seal.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">lock</p>
+</th>
+<td>
+<p class="comment">Lock seal.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">other</p>
+</th>
+<td>
+<p class="comment">Other kind of seal.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">steel</p>
+</th>
+<td>
+<p class="comment">Steel seal.</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Compound Types</h1>
+<h1>Datatypes</h1>
+</body>
+</html>

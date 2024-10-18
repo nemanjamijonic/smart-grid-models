@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+<cim:ProductAssetModel rdf:ID="01_PAM">
+		<cim:AssetModel.AssetInfo rdf:resource="#01_AI"/>
+		<cim:ProductAssetModel.corporateStandardKind>experimental</cim:ProductAssetModel.corporateStandardKind>
+		<cim:ProductAssetModel.modelNumber>pam1</cim:ProductAssetModel.modelNumber>
+		<cim:ProductAssetModel.modelVersion>bjdhdd</cim:ProductAssetModel.modelVersion>
+		<cim:ProductAssetModel.usageKind>customerSubstation</cim:ProductAssetModel.usageKind>
+		<cim:ProductAssetModel.weightTotal>23</cim:ProductAssetModel.weightTotal>
+		<cim:IdentifiedObject.aliasName>PAM</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PAM_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>pam1</cim:IdentifiedObject.name>
+	</cim:ProductAssetModel>
+	<cim:ProductAssetModel rdf:ID="02_PAM">
+		<cim:AssetModel.AssetInfo rdf:resource="#01_AI"/>
+		<cim:ProductAssetModel.corporateStandardKind>experimental</cim:ProductAssetModel.corporateStandardKind>
+		<cim:ProductAssetModel.modelNumber>pam1</cim:ProductAssetModel.modelNumber>
+		<cim:ProductAssetModel.modelVersion>bjdhdd</cim:ProductAssetModel.modelVersion>
+		<cim:ProductAssetModel.usageKind>customerSubstation</cim:ProductAssetModel.usageKind>
+		<cim:ProductAssetModel.weightTotal>23</cim:ProductAssetModel.weightTotal>
+		<cim:IdentifiedObject.aliasName>PAM</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PAM_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>pam2</cim:IdentifiedObject.name>
+	</cim:ProductAssetModel>
+
+	<cim:AssetInfo rdf:ID="01_AI">
+		<cim:AssetInfo.AssetModel rdf:resource="#01_PAM"/>
+		<cim:IdentifiedObject.aliasName>AI</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>AI_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ai1</cim:IdentifiedObject.name>
+	</cim:AssetInfo>
+	<cim:AssetInfo rdf:ID="02_AI">
+		<cim:AssetInfo.AssetModel rdf:resource="#02_PAM"/>
+		<cim:IdentifiedObject.aliasName>AI</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>AI_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ai2</cim:IdentifiedObject.name>
+	</cim:AssetInfo>
+	<cim:AssetInfo rdf:ID="03_AI">
+		<cim:AssetInfo.AssetModel rdf:resource="#01_PAM"/>
+		<cim:IdentifiedObject.aliasName>AI</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>AI_03</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ai3</cim:IdentifiedObject.name>
+	</cim:AssetInfo>
+	<cim:AssetOwner rdf:ID="01_AO">
+		<cim:IdentifiedObject.aliasName>AO</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>AO_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ao1</cim:IdentifiedObject.name>
+	</cim:AssetOwner>
+	
+	<cim:AssetContainer rdf:ID="01_AC">
+		<cim:Asset.AssetInfo rdf:resource="#01_AI"/>
+		<cim:Asset.critical>True</cim:Asset.critical>
+		<cim:Asset.initialCondition>ic1</cim:Asset.initialCondition>
+		<cim:Asset.initialLossOfLife>12</cim:Asset.initialLossOfLife>
+		<cim:Asset.lotNumber>ln1</cim:Asset.lotNumber>
+		<cim:Asset.OrganisationRoles rdf:resource="#01_AO"/>
+		<cim:Asset.purchasePrice>33</cim:Asset.purchasePrice>
+		<cim:Asset.serialNumber>sn1</cim:Asset.serialNumber>
+		<cim:Asset.type>accc</cim:Asset.type>
+		<cim:Asset.utcNumber>un1</cim:Asset.utcNumber>
+		<cim:IdentifiedObject.aliasName>AC</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>AC_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ac1</cim:IdentifiedObject.name>
+	</cim:AssetContainer>
+	<cim:ComMedia rdf:ID="01_CM">
+		<cim:Asset.AssetInfo rdf:resource="#01_AI"/>
+		<cim:Asset.critical>True</cim:Asset.critical>
+		<cim:Asset.initialCondition>ic1</cim:Asset.initialCondition>
+		<cim:Asset.initialLossOfLife>12</cim:Asset.initialLossOfLife>
+		<cim:Asset.lotNumber>ln1</cim:Asset.lotNumber>
+		<cim:Asset.OrganisationRoles rdf:resource="#01_AO"/>
+		<cim:Asset.purchasePrice>33</cim:Asset.purchasePrice>
+		<cim:Asset.serialNumber>sn1</cim:Asset.serialNumber>
+		<cim:Asset.type>accc</cim:Asset.type>
+		<cim:Asset.utcNumber>un1</cim:Asset.utcNumber>
+		<cim:IdentifiedObject.aliasName>CM</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>CM_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>cm1</cim:IdentifiedObject.name>
+	</cim:ComMedia>
+	<cim:ComMedia rdf:ID="02_CM">
+		<cim:Asset.AssetInfo rdf:resource="#01_AI"/>
+		<cim:Asset.critical>True</cim:Asset.critical>
+		<cim:Asset.initialCondition>ic1</cim:Asset.initialCondition>
+		<cim:Asset.initialLossOfLife>12</cim:Asset.initialLossOfLife>
+		<cim:Asset.lotNumber>ln1</cim:Asset.lotNumber>
+		<cim:Asset.OrganisationRoles rdf:resource="#01_AO"/>
+		<cim:Asset.purchasePrice>33</cim:Asset.purchasePrice>
+		<cim:Asset.serialNumber>sn1</cim:Asset.serialNumber>
+		<cim:Asset.type>accc</cim:Asset.type>
+		<cim:Asset.utcNumber>un1</cim:Asset.utcNumber>
+		<cim:IdentifiedObject.aliasName>CM</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>CM_02</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>cm2</cim:IdentifiedObject.name>
+	</cim:ComMedia>
+	<cim:Seal rdf:ID="01_S">
+		<cim:Seal.appliedDateTime>1/1/2022</cim:Seal.appliedDateTime>
+		<cim:Seal.AssetContainer rdf:resource="#01_AC"/>
+		<cim:Seal.condition>broken</cim:Seal.condition>
+		<cim:Seal.kind>lead</cim:Seal.kind>
+		<cim:Seal.sealNumber>sn1</cim:Seal.sealNumber>
+		<cim:IdentifiedObject.aliasName>S</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>S_01</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>s1</cim:IdentifiedObject.name>
+	</cim:Seal>
+
+
+</rdf:RDF>
+
+
+
+

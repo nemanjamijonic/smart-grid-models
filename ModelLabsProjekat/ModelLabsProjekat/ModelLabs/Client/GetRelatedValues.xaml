@@ -1,0 +1,24 @@
+﻿<Window x:Class="Client.GetRelatedValues"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="GetRelatedValues" Height="679" Width="800" Background="BlanchedAlmond">
+    <Grid>
+        <Canvas Margin="0,0,0,-6">
+            <Label Name="GetValuesLabel" Content="Get Related Values"  FontSize="40" HorizontalAlignment="Left" FontFamily="Century Gothic" Canvas.Left="255" Width="410" VerticalAlignment="Top" />
+            <Label Name="GIDSLabel" Content="Izaberi gid : " FontSize="20" HorizontalAlignment="Center" FontFamily="Century Gothic" Canvas.Left="38" Canvas.Top="73" Width="158" VerticalAlignment="Top" />
+            <ComboBox SelectionChanged="ComboBoxGIDS_SelectionChanged" Name="ComboBoxGIDS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" Height="32" Canvas.Left="77" Canvas.Top="108" Width="154" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Name="ReferencaLabel" Content="Izaberi referencu : " FontSize="20" HorizontalAlignment="Center" FontFamily="Century Gothic" Canvas.Left="38" Canvas.Top="145" Width="193" VerticalAlignment="Top" />
+            <ComboBox SelectionChanged="ComboBoxReference_SelectionChanged"  Name="ComboBoxReference" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Canvas.Left="77" Canvas.Top="184" Width="154" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Name="typeLable" Content="Izaberi tip : " FontSize="20" HorizontalAlignment="Center" FontFamily="Century Gothic" Canvas.Left="38" Canvas.Top="224" Width="193" VerticalAlignment="Top" />
+            <ComboBox SelectionChanged="ComboBoxTypes_SelectionChanged"  Name="ComboBoxTypes" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" Height="35" Canvas.Left="77" Canvas.Top="264" Width="154" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Name="AtributLable" Content="Izaberi atribute : " FontSize="20" HorizontalAlignment="Center" FontFamily="Century Gothic" Canvas.Left="38" Canvas.Top="299" Width="193" VerticalAlignment="Top" />
+            <ListBox SelectionMode="Multiple"  Name="ComboBoxAtribut" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.5,0.5" Height="217" Canvas.Left="38" Canvas.Top="339" Width="262" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RichTextBox x:Name="Opis" Height="443" VerticalAlignment="Top" FontSize="10" Background="LightPink" Foreground="Black" Canvas.Left="376" Canvas.Top="108" Width="364" HorizontalAlignment="Left"/>
+            <Button x:Name="GetValuesButton" Content="GetRelatedValues" HorizontalAlignment="Center" VerticalAlignment="Top" Width="156" Height="33" Background="LightPink" Click="GetValues_Click" Canvas.Left="480" Canvas.Top="589" RenderTransformOrigin="0.497,3.5"/>
+        </Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+Load report:
+
+Transform report:
+ProductAssetModel ID = 01_PAM SUCCESSFULLY converted to GID = 30064771071
+ProductAssetModel ID = 02_PAM SUCCESSFULLY converted to GID = 30064771070
+
+AssetInfo ID = 01_AI SUCCESSFULLY converted to GID = 8589934591
+AssetInfo ID = 02_AI SUCCESSFULLY converted to GID = 8589934590
+AssetInfo ID = 03_AI SUCCESSFULLY converted to GID = 8589934589
+
+AssetOwner ID = 01_AO SUCCESSFULLY converted to GID = 25769803775
+
+AssetContainer ID = 01_AC SUCCESSFULLY converted to GID = 17179869183
+
+ComMedia ID = 01_CM SUCCESSFULLY converted to GID = 12884901887
+ComMedia ID = 02_CM SUCCESSFULLY converted to GID = 12884901886
+
+Seal ID = 01_S SUCCESSFULLY converted to GID = 21474836479
+
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000001
+Client globalId: 0x00000006fffffffe	 - Server globalId: 0x0000000600000002
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000001
+Client globalId: 0x00000001fffffffe	 - Server globalId: 0x0000000100000002
+Client globalId: 0x00000001fffffffd	 - Server globalId: 0x0000000100000003
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000001
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000001
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000001
+Client globalId: 0x00000002fffffffe	 - Server globalId: 0x0000000200000002
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000001
